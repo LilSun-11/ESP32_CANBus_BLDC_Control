@@ -1,0 +1,445 @@
+�bootloader[0m
+[0;32m�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Oct 17 2024 16:36:41[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a26ch ( 41580) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001a294 vaddr=3ffb0000 size=02374h (  9076) load[0m
+[0;32mI (123) esp_image: segment 2: paddr=0001c610 vaddr=40080000 size=03a08h ( 14856) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=16330h ( 90928) map[0m
+[0;32mI (165) esp_image: segment 4: paddr=00036358 vaddr=40083a08 size=093d8h ( 37848) load[0m
+[0;32mI (187) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (187) boot: Disabling RNG early entropy source...[0m
+[0;32mI (199) cpu_start: Multicore app[0m
+[0;32mI (207) cpu_start: Pro cpu start user code[0m
+[0;32mI (207) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (207) app_init: Application information:[0m
+[0;32mI (210) app_init: Project name:     TWAI_MotorControl[0m
+[0;32mI (216) app_init: App version:      1[0m
+[0;32mI (220) app_init: Compile time:     Oct 17 2024 16:36:34[0m
+[0;32mI (226) app_init: ELF file SHA256:  40f6d7fb9...[0m
+[0;32mI (231) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (237) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (242) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (247) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (252) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (259) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (265) heap_init: At 3FFB2C40 len 0002D3C0 (180 KiB): DRAM[0m
+[0;32mI (271) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (277) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (284) heap_init: At 4008CDE0 len 00013220 (76 KiB): IRAM[0m
+[0;32mI (292) spi_flash: detected chip: generic[0m
+[0;32mI (295) spi_flash: flash io: dio[0m
+[0;32mI (299) main_task: Started on CPU0[0m
+[0;32mI (309) main_task: Calling app_main()[0m
+[0;32mI (309) gpio: GPIO[22]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (309) gpio: GPIO[21]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+TWAI driver installed
+TWAI driver started
+Temp: 33, Voltage: 9 
+No Error <3 !
+Received message from motor: ID = 0x141, Data = Temperature = 33, TorqueCurrent = 9, Speed = 0, Position = 170.1538
+Received message from motor: ID = 0x141, Data = Temperature = 33, TorqueCurrent = 5, Speed = 3234, Position = 172.6538
+Received message from motor: ID = 0x141, Data = Temperature = 33, TorqueCurrent = 3, Speed = 3185, Position = 175.9780
+Received message from motor: ID = 0x141, Data = Temperature = 33, TorqueCurrent = 25, Speed = 3085, Position = 179.2088
+Received message from motor: ID = 0x141, Data = Temperature = 33, TorqueCurrent = 4, Speed = 0, Position = 260.1758
+Received message from motor: ID = 0x141, Data = Temperature = 33, TorqueCurrent = 571, Speed = 0, Position = 260.1758
+Received message from motor: ID = 0x141, Data = Temperature = 33, TorqueCurrent = 5, Speed = 3262, Position = 262.5989
+Received message from motor: ID = 0x141, Data = Temperature = 33, TorqueCurrent = -2, Speed = 3205, Position = 265.9341
+Received message from motor: ID = 0x141, Data = Temperature = 0, TorqueCurrent = 0, Speed = 0, Position = 0.0000
+No response from motor: ESP_ERR_TIMEOUT
+Temperature = 33, TorqueCurrent = -2, Speed = 3205, Position = 265.9341
+No response from motor: ESP_ERR_TIMEOUT
+Temperature = 33, TorqueCurrent = -2, Speed = 3205, Position = 265.9341
+No response from motor: ESP_ERR_TIMEOUT
+Temperature = 33, TorqueCurrent = -2, Speed = 3205, Position = 265.9341
+No response from motor: ESP_ERR_TIMEOUT
+Temperature = 33, TorqueCurrent = -2, Speed = 3205, Position = 265.9341
+No response from motor: ESP_ERR_TIMEOUT
+Temperature = 33, TorqueCurrent = -2, Speed = 3205, Position = 265.9341
+No response from motor: ESP_ERR_TIMEOUT
+Temperature = 33, TorqueCurrent = -2, Speed = 3205, Position = 265.9341
+No response from motor: ESP_ERR_TIMEOUT
+Temperature = 33, TorqueCurrent = -2, Speed = 3205, Position = 265.9341
+No response from motor: ESP_ERR_TIMEOUT
+Temperature = 33, TorqueCurrent = -2, Speed = 3205, Position = 265.9341
+No response from motor: ESP_ERR_TIMEOUT
+Temperature = 33, TorqueCurrent = -2, Speed = 3205, Position = 265.9341
+No response from motor: ESP_ERR_TIMEOUT
+Temperature = 33, TorqueCurrent = -2, Speed = 3205, Position = 265.9341
+No response from motor: ESP_ERR_TIMEOUT
+Temperature = 33, TorqueCurrent = -2, Speed = 3205, Position = 265.9341
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Oct 17 2024 16:36:41[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a26ch ( 41580) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001a294 vaddr=3ffb0000 size=02374h (  9076) load[0m
+[0;32mI (123) esp_image: segment 2: paddr=0001c610 vaddr=40080000 size=03a08h ( 14856) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=16330h ( 90928) map[0m
+[0;32mI (165) esp_image: segment 4: paddr=00036358 vaddr=40083a08 size=093d8h ( 37848) load[0m
+[0;32mI (187) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (187) boot: Disabling RNG early entropy source...[0m
+[0;32mI (199) cpu_start: Multicore app[0m
+[0;32mI (207) cpu_start: Pro cpu start user code[0m
+[0;32mI (207) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (207) app_init: Application information:[0m
+[0;32mI (210) app_init: Project name:     TWAI_MotorControl[0m
+[0;32mI (216) app_init: App version:      1[0m
+[0;32mI (220) app_init: Compile time:     Oct 17 2024 16:36:34[0m
+[0;32mI (226) app_init: ELF file SHA256:  40f6d7fb9...[0m
+[0;32mI (231) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (237) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (242) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (247) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (252) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (259) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (265) heap_init: At 3FFB2C40 len 0002D3C0 (180 KiB): DRAM[0m
+[0;32mI (271) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (278) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (284) heap_init: At 4008CDE0 len 00013220 (76 KiB): IRAM[0m
+[0;32mI (292) spi_flash: detected chip: generic[0m
+[0;32mI (295) spi_flash: flash io: dio[0m
+[0;32mI (299) main_task: Started on CPU0[0m
+[0;32mI (309) main_task: Calling app_main()[0m
+[0;32mI (309) gpio: GPIO[22]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (309) gpio: GPIO[21]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+TWAI driver installed
+TWAI driver started
+Temp: 33, Voltage: 9 
+No Error <3 !
+Received message from motor: ID = 0x141, Data = Temperature = 33, TorqueCurrent = -2, Speed = 0, Position = 350.1978
+Received message from motor: ID = 0x141, Data = Temperature = 33, TorqueCurrent = -3, Speed = 3254, Position = 352.7473
+Received message from motor: ID = 0x141, Data = Temperature = 33, TorqueCurrent = 2, Speed = 3190, Position = 356.0769
+Received message from motor: ID = 0x141, Data = Temperature = 33, TorqueCurrent = 30, Speed = 3081, Position = 359.3462
+Received message from motor: ID = 0x141, Data = Temperature = 33, TorqueCurrent = 11, Speed = 0, Position = 80.1319
+Received message from motor: ID = 0x141, Data = Temperature = 33, TorqueCurrent = 549, Speed = 0, Position = 80.1319
+Received message from motor: ID = 0x141, Data = Temperature = 33, TorqueCurrent = 2, Speed = 3266, Position = 82.5220
+Received message from motor: ID = 0x141, Data = Temperature = 33, TorqueCurrent = -5, Speed = 3200, Position = 85.8132
+Received message from motor: ID = 0x141, Data = Temperature = 33, TorqueCurrent = 0, Speed = 0, Position = 170.1538
+Received message from motor: ID = 0x141, Data = Temperature = 33, TorqueCurrent = 570, Speed = 0, Position = 170.1538
+Received message from motor: ID = 0x141, Data = Temperature = 33, TorqueCurrent = 12, Speed = 3238, Position = 172.5769
+Received message from motor: ID = 0x141, Data = Temperature = 33, TorqueCurrent = -6, Speed = 3206, Position = 175.9066
+Received message from motor: ID = 0x141, Data = Temperature = 33, TorqueCurrent = 1, Speed = 0, Position = 260.1758
+Received message from motor: ID = 0x141, Data = Temperature = 33, TorqueCurrent = 571, Speed = 0, Position = 260.1758
+Received message from motor: ID = 0x141, Data = Temperature = 33, TorqueCurrent = 4, Speed = 3256, Position = 262.5989
+Received message from motor: ID = 0x141, Data = Temperature = 33, TorqueCurrent = -4, Speed = 3207, Position = 265.9341
+Received message from motor: ID = 0x141, Data = Temperature = 33, TorqueCurrent = 11, Speed = 0, Position = 350.1978
+Received message from motor: ID = 0x141, Data = Temperature = 33, TorqueCurrent = 544, Speed = 0, Position = 350.1978
+Received message from motor: ID = 0x141, Data = Temperature = 33, TorqueCurrent = 12, Speed = 3249, Position = 352.6264
+Received message from motor: ID = 0x141, Data = Temperature = 33, TorqueCurrent = -5, Speed = 3214, Position = 355.9561
+Received message from motor: ID = 0x141, Data = Temperature = 33, TorqueCurrent = -4, Speed = 0, Position = 80.1319
+Received message from motor: ID = 0x141, Data = Temperature = 33, TorqueCurrent = 567, Speed = 0, Position = 80.1319
+Received message from motor: ID = 0x141, Data = Temperature = 33, TorqueCurrent = 3, Speed = 3258, Position = 82.5165
+Received message from motor: ID = 0x141, Data = Temperature = 33, TorqueCurrent = -8, Speed = 3204, Position = 85.8077
+Received message from motor: ID = 0x141, Data = Temperature = 33, TorqueCurrent = 5, Speed = 0, Position = 170.1538
+Received message from motor: ID = 0x141, Data = Temperature = 33, TorqueCurrent = 571, Speed = 0, Position = 170.1538
+Received message from motor: ID = 0x141, Data = Temperature = 33, TorqueCurrent = 14, Speed = 3245, Position = 172.5824
+Received message from motor: ID = 0x141, Data = Temperature = 33, TorqueCurrent = -6, Speed = 3216, Position = 175.9176
+Received message from motor: ID = 0x141, Data = Temperature = 33, TorqueCurrent = 12, Speed = 0, Position = 260.1758
+Received message from motor: ID = 0x141, Data = Temperature = 33, TorqueCurrent = 545, Speed = 0, Position = 260.1758
+Received message from motor: ID = 0x141, Data = Temperature = 33, TorqueCurrent = 9, Speed = 3257, Position = 262.5989
+Received message from motor: ID = 0x141, Data = Temperature = 33, TorqueCurrent = -4, Speed = 3210, Position = 265.9286
+Received message from motor: ID = 0x141, Data = Temperature = 33, TorqueCurrent = 0, Speed = 0, Position = 350.1978
+Received message from motor: ID = 0x141, Data = Temperature = 33, TorqueCurrent = 569, Speed = 0, Position = 350.1978
+Received message from motor: ID = 0x141, Data = Temperature = 33, TorqueCurrent = 8, Speed = 3245, Position = 352.6209
+Received message from motor: ID = 0x141, Data = Temperature = 33, TorqueCurrent = -9, Speed = 3214, Position = 355.9121
+Received message from motor: ID = 0x141, Data = Temperature = 33, TorqueCurrent = 4, Speed = 0, Position = 80.1319
+Received message from motor: ID = 0x141, Data = Temperature = 33, TorqueCurrent = 572, Speed = 0, Position = 80.1319
+Received message from motor: ID = 0x141, Data = Temperature = 33, TorqueCurrent = 3, Speed = 3266, Position = 82.5220
+Received message from motor: ID = 0x141, Data = Temperature = 33, TorqueCurrent = -6, Speed = 3205, Position = 85.8187
+Received message from motor: ID = 0x141, Data = Temperature = 33, TorqueCurrent = 9, Speed = 0, Position = 170.1538
+Received message from motor: ID = 0x141, Data = Temperature = 33, TorqueCurrent = 544, Speed = 0, Position = 170.1538
+Received message from motor: ID = 0x141, Data = Temperature = 33, TorqueCurrent = 10, Speed = 3239, Position = 172.5769
+Received message from motor: ID = 0x141, Data = Temperature = 33, TorqueCurrent = -2, Speed = 3198, Position = 175.9011
+Received message from motor: ID = 0x141, Data = Temperature = 33, TorqueCurrent = 1, Speed = 0, Position = 260.1758
+Received message from motor: ID = 0x141, Data = Temperature = 33, TorqueCurrent = 571, Speed = 0, Position = 260.1758
+Received message from motor: ID = 0x141, Data = Temperature = 33, TorqueCurrent = 4, Speed = 3258, Position = 262.5989
+Received message from motor: ID = 0x141, Data = Temperature = 33, TorqueCurrent = -3, Speed = 3199, Position = 265.8901
+Received message from motor: ID = 0x141, Data = Temperature = 33, TorqueCurrent = 1, Speed = 0, Position = 350.1978
+Received message from motor: ID = 0x141, Data = Temperature = 33, TorqueCurrent = 569, Speed = 0, Position = 350.1978
+Received message from motor: ID = 0x141, Data = Temperature = 33, TorqueCurrent = 7, Speed = 3251, Position = 352.6264
+Received message from motor: ID = 0x141, Data = Temperature = 33, TorqueCurrent = -8, Speed = 3220, Position = 355.9561
+Received message from motor: ID = 0x141, Data = Temperature = 0, TorqueCurrent = 0, Speed = 0, Position = 0.0000
+No response from motor: ESP_ERR_TIMEOUT
+Temperature = 33, TorqueCurrent = -8, Speed = 3220, Position = 355.9561
+No response from motor: ESP_ERR_TIMEOUT
+Temperature = 33, TorqueCurrent = -8, Speed = 3220, Position = 355.9561
+No response from motor: ESP_ERR_TIMEOUT
+Temperature = 33, TorqueCurrent = -8, Speed = 3220, Position = 355.9561
+No response from motor: ESP_ERR_TIMEOUT
+Temperature = 33, TorqueCurrent = -8, Speed = 3220, Position = 355.9561
+No response from motor: ESP_ERR_TIMEOUT
+Temperature = 33, TorqueCurrent = -8, Speed = 3220, Position = 355.9561
+No response from motor: ESP_ERR_TIMEOUT
+Temperature = 33, TorqueCurrent = -8, Speed = 3220, Position = 355.9561
+No response from motor: ESP_ERR_TIMEOUT
+Temperature = 33, TorqueCurrent = -8, Speed = 3220, Position = 355.9561
+No response from motor: ESP_ERR_TIMEOUT
+Temperature = 33, TorqueCurrent = -8, Speed = 3220, Position = 355.9561
+No response from motor: ESP_ERR_TIMEOUT
+Temperature = 33, TorqueCurrent = -8, Speed = 3220, Position = 355.9561
+No response from motor: ESP_ERR_TIMEOUT
+Temperature = 33, TorqueCurrent = -8, Speed = 3220, Position = 355.9561
+No response from motor: ESP_ERR_TIMEOUT
+Temperature = 33, TorqueCurrent = -8, Speed = 3220, Position = 355.9561
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Oct 17 2024 16:36:41[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a26ch ( 41580) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001a294 vaddr=3ffb0000 size=02374h (  9076) load[0m
+[0;32mI (123) esp_image: segment 2: paddr=0001c610 vaddr=40080000 size=03a08h ( 14856) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=16330h ( 90928) map[0m
+[0;32mI (165) esp_image: segment 4: paddr=00036358 vaddr=40083a08 size=093d8h ( 37848) load[0m
+[0;32mI (187) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (187) boot: Disabling RNG early entropy source...[0m
+[0;32mI (199) cpu_start: Multicore app[0m
+[0;32mI (207) cpu_start: Pro cpu start user code[0m
+[0;32mI (207) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (207) app_init: Application information:[0m
+[0;32mI (210) app_init: Project name:     TWAI_MotorControl[0m
+[0;32mI (216) app_init: App version:      1[0m
+[0;32mI (220) app_init: Compile time:     Oct 17 2024 16:36:34[0m
+[0;32mI (226) app_init: ELF file SHA256:  40f6d7fb9...[0m
+[0;32mI (231) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (237) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (242) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (247) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (252) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (259) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (265) heap_init: At 3FFB2C40 len 0002D3C0 (180 KiB): DRAM[0m
+[0;32mI (271) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (278) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (284) heap_init: At 4008CDE0 len 00013220 (76 KiB): IRAM[0m
+[0;32mI (292) spi_flash: detected chip: generic[0m
+[0;32mI (295) spi_flash: flash io: dio[0m
+[0;32mI (299) main_task: Started on CPU0[0m
+[0;32mI (309) main_task: Calling app_main()[0m
+[0;32mI (309) gpio: GPIO[22]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (309) gpio: GPIO[21]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+TWAI driver installed
+TWAI driver started
+Temp: 33, Voltage: 9 
+No Error <3 !
+Received message from motor: ID = 0x141, Data = Temperature = 33, TorqueCurrent = -4, Speed = 0, Position = 80.1319
+Received message from motor: ID = 0x141, Data = Temperature = 33, TorqueCurrent = 3, Speed = 3261, Position = 82.6374
+Received message from motor: ID = 0x141, Data = Temperature = 33, TorqueCurrent = 0, Speed = 3181, Position = 85.9231
+Received message from motor: ID = 0x141, Data = Temperature = 33, TorqueCurrent = 21, Speed = 3097, Position = 89.1538
+Received message from motor: ID = 0x141, Data = Temperature = 33, TorqueCurrent = 3, Speed = 0, Position = 170.1538
+Received message from motor: ID = 0x141, Data = Temperature = 33, TorqueCurrent = 571, Speed = 0, Position = 170.1538
+Received message from motor: ID = 0x141, Data = Temperature = 33, TorqueCurrent = 14, Speed = 3244, Position = 172.5824
+Received message from motor: ID = 0x141, Data = Temperature = 33, TorqueCurrent = -4, Speed = 3210, Position = 175.9121
+Received message from motor: ID = 0x141, Data = Temperature = 34, TorqueCurrent = 14, Speed = 0, Position = 260.1758
+Received message from motor: ID = 0x141, Data = Temperature = 34, TorqueCurrent = 548, Speed = 0, Position = 260.1758
+Received message from motor: ID = 0x141, Data = Temperature = 34, TorqueCurrent = 5, Speed = 3265, Position = 262.6044
+Received message from motor: ID = 0x141, Data = Temperature = 34, TorqueCurrent = -2, Speed = 3198, Position = 265.9341
+Received message from motor: ID = 0x141, Data = Temperature = 34, TorqueCurrent = 0, Speed = 0, Position = 350.1978
+Received message from motor: ID = 0x141, Data = Temperature = 34, TorqueCurrent = 569, Speed = 0, Position = 350.1978
+Received message from motor: ID = 0x141, Data = Temperature = 34, TorqueCurrent = 6, Speed = 3253, Position = 352.6264
+Received message from motor: ID = 0x141, Data = Temperature = 34, TorqueCurrent = -5, Speed = 3209, Position = 355.9066
+Received message from motor: ID = 0x141, Data = Temperature = 34, TorqueCurrent = 0, Speed = 0, Position = 80.1319
+Received message from motor: ID = 0x141, Data = Temperature = 34, TorqueCurrent = 567, Speed = 0, Position = 80.1319
+Received message from motor: ID = 0x141, Data = Temperature = 34, TorqueCurrent = 1, Speed = 3266, Position = 82.5110
+Received message from motor: ID = 0x141, Data = Temperature = 34, TorqueCurrent = -4, Speed = 3196, Position = 85.8077
+Received message from motor: ID = 0x141, Data = Temperature = 34, TorqueCurrent = 13, Speed = 0, Position = 170.1538
+Received message from motor: ID = 0x141, Data = Temperature = 34, TorqueCurrent = 546, Speed = 0, Position = 170.1538
+Received message from motor: ID = 0x141, Data = Temperature = 34, TorqueCurrent = 10, Speed = 3240, Position = 172.5824
+Received message from motor: ID = 0x141, Data = Temperature = 34, TorqueCurrent = -1, Speed = 3198, Position = 175.9121
+Received message from motor: ID = 0x141, Data = Temperature = 34, TorqueCurrent = 1, Speed = 0, Position = 260.1758
+Received message from motor: ID = 0x141, Data = Temperature = 34, TorqueCurrent = 570, Speed = 0, Position = 260.1758
+Received message from motor: ID = 0x141, Data = Temperature = 34, TorqueCurrent = 3, Speed = 3255, Position = 262.5989
+Received message from motor: ID = 0x141, Data = Temperature = 34, TorqueCurrent = -1, Speed = 3193, Position = 265.8901
+Received message from motor: ID = 0x141, Data = Temperature = 34, TorqueCurrent = 1, Speed = 0, Position = 350.1978
+Received message from motor: ID = 0x141, Data = Temperature = 34, TorqueCurrent = 567, Speed = 0, Position = 350.1978
+Received message from motor: ID = 0x141, Data = Temperature = 34, TorqueCurrent = 7, Speed = 3249, Position = 352.6209
+Received message from motor: ID = 0x141, Data = Temperature = 34, TorqueCurrent = -5, Speed = 3198, Position = 355.9506
+Received message from motor: ID = 0x141, Data = Temperature = 0, TorqueCurrent = 0, Speed = 0, Position = 0.0000
+No response from motor: ESP_ERR_TIMEOUT
+Temperature = 34, TorqueCurrent = -5, Speed = 3198, Position = 355.9506
+No response from motor: ESP_ERR_TIMEOUT
+Temperature = 34, TorqueCurrent = -5, Speed = 3198, Position = 355.9506
+No response from motor: ESP_ERR_TIMEOUT
+Temperature = 34, TorqueCurrent = -5, Speed = 3198, Position = 355.9506
+No response from motor: ESP_ERR_TIMEOUT
+Temperature = 34, TorqueCurrent = -5, Speed = 3198, Position = 355.9506
+No response from motor: ESP_ERR_TIMEOUT
+Temperature = 34, TorqueCurrent = -5, Speed = 3198, Position = 355.9506
+No response from motor: ESP_ERR_TIMEOUT
+Temperature = 34, TorqueCurrent = -5, Speed = 3198, Position = 355.9506
+No response from motor: ESP_ERR_TIMEOUT
+Temperature = 34, TorqueCurrent = -5, Speed = 3198, Position = 355.9506
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF HEAD-HASH-NOTFOUND 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Oct 17 2024 16:36:41[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a26ch ( 41580) map[0m
+[0;32mI (120) esp_image: segment 1: paddr=0001a294 vaddr=3ffb0000 size=02374h (  9076) load[0m
+[0;32mI (123) esp_image: segment 2: paddr=0001c610 vaddr=40080000 size=03a08h ( 14856) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=16330h ( 90928) map[0m
+[0;32mI (165) esp_image: segment 4: paddr=00036358 vaddr=40083a08 size=093d8h ( 37848) load[0m
+[0;32mI (187) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (187) boot: Disabling RNG early entropy source...[0m
+[0;32mI (199) cpu_start: Multicore app[0m
+[0;32mI (207) cpu_start: Pro cpu start user code[0m
+[0;32mI (207) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (207) app_init: Application information:[0m
+[0;32mI (210) app_init: Project name:     TWAI_MotorControl[0m
+[0;32mI (216) app_init: App version:      1[0m
+[0;32mI (220) app_init: Compile time:     Oct 17 2024 16:36:34[0m
+[0;32mI (226) app_init: ELF file SHA256:  40f6d7fb9...[0m
+[0;32mI (231) app_init: ESP-IDF:          HEAD-HASH-NOTFOUND[0m
+[0;32mI (237) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (242) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (247) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (252) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (259) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (265) heap_init: At 3FFB2C40 len 0002D3C0 (180 KiB): DRAM[0m
+[0;32mI (271) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (278) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (284) heap_init: At 4008CDE0 len 00013220 (76 KiB): IRAM[0m
+[0;32mI (292) spi_flash: detected chip: generic[0m
+[0;32mI (295) spi_flash: flash io: dio[0m
+[0;32mI (299) main_task: Started on CPU0[0m
+[0;32mI (309) main_task: Calling app_main()[0m
+[0;32mI (309) gpio: GPIO[22]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (309) gpio: GPIO[21]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+TWAI driver installed
+TWAI driver started
+Temp: 34, Voltage: 9 
+No Error <3 !
+Received message from motor: ID = 0x141, Data = Temperature = 34, TorqueCurrent = 9, Speed = 0, Position = 80.1319
+Received message from motor: ID = 0x141, Data = Temperature = 34, TorqueCurrent = 2, Speed = 3263, Position = 82.5934
+Received message from motor: ID = 0x141, Data = Temperature = 34, TorqueCurrent = -1, Speed = 3183, Position = 85.8791
+Received message from motor: ID = 0x141, Data = Temperature = 34, TorqueCurrent = 19, Speed = 3104, Position = 89.1099
+Received message from motor: ID = 0x141, Data = Temperature = 34, TorqueCurrent = -2, Speed = 0, Position = 170.1538
+Received message from motor: ID = 0x141, Data = Temperature = 34, TorqueCurrent = 567, Speed = 0, Position = 170.1538
+Received message from motor: ID = 0x141, Data = Temperature = 34, TorqueCurrent = 6, Speed = 3244, Position = 172.6154
+Received message from motor: ID = 0x141, Data = Temperature = 34, TorqueCurrent = -2, Speed = 3196, Position = 175.9066
+Received message from motor: ID = 0x141, Data = Temperature = 34, TorqueCurrent = 14, Speed = 0, Position = 260.1758
+Received message from motor: ID = 0x141, Data = Temperature = 34, TorqueCurrent = 546, Speed = 0, Position = 260.1758
+Received message from motor: ID = 0x141, Data = Temperature = 34, TorqueCurrent = 16, Speed = 3252, Position = 262.5934
+Received message from motor: ID = 0x141, Data = Temperature = 34, TorqueCurrent = 0, Speed = 3193, Position = 265.9231
+Received message from motor: ID = 0x141, Data = Temperature = 34, TorqueCurrent = -2, Speed = 0, Position = 350.1978
+Received message from motor: ID = 0x141, Data = Temperature = 34, TorqueCurrent = 570, Speed = 0, Position = 350.1978
+Received message from motor: ID = 0x141, Data = Temperature = 34, TorqueCurrent = 3, Speed = 3253, Position = 352.6648
+Received message from motor: ID = 0x141, Data = Temperature = 34, TorqueCurrent = -6, Speed = 3213, Position = 355.9561
+Received message from motor: ID = 0x141, Data = Temperature = 34, TorqueCurrent = 0, Speed = 0, Position = 80.1319
+Received message from motor: ID = 0x141, Data = Temperature = 34, TorqueCurrent = 569, Speed = 0, Position = 80.1319
+Received message from motor: ID = 0x141, Data = Temperature = 34, TorqueCurrent = 2, Speed = 3264, Position = 82.5165
+Received message from motor: ID = 0x141, Data = Temperature = 34, TorqueCurrent = -3, Speed = 3188, Position = 85.7692
+Received message from motor: ID = 0x141, Data = Temperature = 34, TorqueCurrent = 11, Speed = 0, Position = 170.1538
+Received message from motor: ID = 0x141, Data = Temperature = 34, TorqueCurrent = 545, Speed = 0, Position = 170.1538
+Received message from motor: ID = 0x141, Data = Temperature = 34, TorqueCurrent = 11, Speed = 3240, Position = 172.5769
+Received message from motor: ID = 0x141, Data = Temperature = 34, TorqueCurrent = 0, Speed = 3194, Position = 175.9066
+Received message from motor: ID = 0x141, Data = Temperature = 34, TorqueCurrent = 1, Speed = 0, Position = 260.1758
+Received message from motor: ID = 0x141, Data = Temperature = 34, TorqueCurrent = 571, Speed = 0, Position = 260.1758
+Received message from motor: ID = 0x141, Data = Temperature = 34, TorqueCurrent = 4, Speed = 3263, Position = 262.5989
+Received message from motor: ID = 0x141, Data = Temperature = 34, TorqueCurrent = -2, Speed = 3194, Position = 265.8901
+Received message from motor: ID = 0x141, Data = Temperature = 0, TorqueCurrent = 0, Speed = 0, Position = 0.0000
+No response from motor: ESP_ERR_TIMEOUT
+Temperature = 34, TorqueCurrent = -2, Speed = 3194, Position = 265.8901
+No response from motor: ESP_ERR_TIMEOUT
+Temperature = 34, TorqueCurrent = -2, Speed = 3194, Position = 265.8901
+No response from motor: ESP_ERR_TIMEOUT
+Temperature = 34, TorqueCurrent = -2, Speed = 3194, Position = 265.8901
+No response from motor: ESP_ERR_TIMEOUT
+Temperature = 34, TorqueCurrent = -2, Speed = 3194, Position = 265.8901
+No response from motor: ESP_ERR_TIMEOUT
+Temperature = 34, TorqueCurrent = -2, Speed = 3194, Position = 265.8901
+No response from motor: ESP_ERR_TIMEOUT
+Temperature = 34, TorqueCurrent = -2, Speed = 3194, Position = 265.8901
+No response from motor: ESP_ERR_TIMEOUT
+Temperature = 34, TorqueCurrent = -2, Speed = 3194, Position = 265.8901
+No response from motor: ESP_ERR_TIMEOUT
+Temperature = 34, TorqueCurrent = -2, Speed = 3194, Position = 265.8901
+No response from motor: ESP_ERR_TIMEOUT
+Temperature = 34, TorqueCurrent = -2, Speed = 3194, Position = 265.8901

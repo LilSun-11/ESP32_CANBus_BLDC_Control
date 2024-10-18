@@ -1,0 +1,16 @@
+fatal: detected dubious ownership in repository at 'E:/SoftWare/Esp_idf/esp-idf/Espressif/frameworks/esp-idf-v5.3.1'
+'E:/SoftWare/Esp_idf/esp-idf/Espressif/frameworks/esp-idf-v5.3.1' is owned by:
+	BUILTIN/Administrators (S-1-5-32-544)
+but the current user is:
+	ADMIN-PC/Admin (S-1-5-21-3955224721-225534140-1559462859-1003)
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory E:/SoftWare/Esp_idf/esp-idf/Espressif/frameworks/esp-idf-v5.3.1
+CMake Error at E:/SoftWare/Esp_idf/esp-idf/Espressif/frameworks/esp-idf-v5.3.1/tools/cmake/project.cmake:465 (message):
+  Directory specified in EXTRA_COMPONENT_DIRS doesn't exist:
+  E:/Documents/ESP32/CAN_Bus/TWAI_MotorControl/MyLib
+Call Stack (most recent call first):
+  E:/SoftWare/Esp_idf/esp-idf/Espressif/frameworks/esp-idf-v5.3.1/tools/cmake/project.cmake:549 (__project_init)
+  CMakeLists.txt:10 (project)
+
+

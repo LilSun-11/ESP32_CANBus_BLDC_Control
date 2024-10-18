@@ -1,0 +1,22 @@
+{
+    "C_Cpp.errorSquiggles": "disabled",
+    "files.associations": {
+        "stdio.h": "c",
+        "twai.h": "c",
+        "freertos.h": "c",
+        "*.inc": "c",
+        "array": "c",
+        "ranges": "c",
+        "span": "c",
+        "vector": "c",
+        "xstring": "c",
+        "xutility": "c",
+        "string": "c",
+        "string_view": "c",
+        "regex": "c",
+        "gpio.h": "c",
+        "cstdint": "cpp",
+        "motorcan.h": "c",
+        "task.h": "c"
+    }
+}

@@ -1,0 +1,11 @@
+-- IDF_TARGET is not set, guessed 'esp32' from sdkconfig 'E:/Documents/ESP32/CAN_Bus/TWAI_MotorControl/sdkconfig'
+-- Found Git: E:/SoftWare/Esp_idf/esp-idf/Espressif/tools/idf-git/2.44.0/cmd/git.exe (found version "2.44.0.windows.1") 
+-- git rev-parse returned 'fatal: detected dubious ownership in repository at 'E:/SoftWare/Esp_idf/esp-idf/Espressif/frameworks/esp-idf-v5.3.1'
+'E:/SoftWare/Esp_idf/esp-idf/Espressif/frameworks/esp-idf-v5.3.1' is owned by:
+	BUILTIN/Administrators (S-1-5-32-544)
+but the current user is:
+	ADMIN-PC/Admin (S-1-5-21-3955224721-225534140-1559462859-1003)
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory E:/SoftWare/Esp_idf/esp-idf/Espressif/frameworks/esp-idf-v5.3.1'
+-- Configuring incomplete, errors occurred!
